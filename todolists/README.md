@@ -5,7 +5,7 @@ The overall goal of these assignments is to assess your ability to implement and
 This includes:
 
   * Creating Active Record models and relationships between the models.
-   * 
+   ```
         |------| 1      1 |----------|
         | User |----------| Profile  |
         |------|          |----------|
@@ -14,6 +14,7 @@ This includes:
               \ 1   * |----------| 1      * |----------|
                \------| TodoList |----------| TodoItem | 
                       |----------|          |----------|
+                      ```
   * Providing validations for models (using built-in Active Record validations as well as custom validations).
   * Implementing a grandparent relationship.
   * Providing bootstrap data using a `seeds.rb` file.
