@@ -1,7 +1,7 @@
 ## Assignment for Module #2 and Module 4
 #### Active Record Relationships, Nested Resources, Security, and Pagination
 __________________________________________________________________________________
-## I added bootstrap to pretty it up 
+### I added bootstrap to pretty it up 
 ##### The unmodified original assignement can be found in "assignment" branch
 __________________________________________________________________________________
 The overall goal of these assignments is to assess your ability to implement and use Active Record model relationships as well nested resources, authentication, authorization and pagination.
