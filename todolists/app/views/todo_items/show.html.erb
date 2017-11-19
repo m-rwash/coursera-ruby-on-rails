@@ -1,24 +1,42 @@
-<p id="notice"><%= notice %></p>
+<% if flash[:notice] %>
+  <div class="alert alert-success">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo_item.title %>
-</p>
+<div class="container">
+	<div class="well">
+		<div class="row">
+			<div class="well well-sm">
+				<strong>Title:</strong>
+		  		<%= @todo_item.title %>
+		  	</div>
+		</div>
 
-<p>
-  <strong>Due date:</strong>
-  <%= @todo_item.due_date %>
-</p>
+		<div class="row">
+			<div class="well well-sm">
+				<strong>Due date:</strong>
+		  		<%= @todo_item.due_date %>
+		  	</div>
+		</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo_item.description %>
-</p>
+		<div class="row">
+			<div class="well well-sm">
+				<strong>Description:</strong>
+		  		<%= @todo_item.description %>
+		  	</div>
+		</div>
 
-<p>
-  <strong>Completed:</strong>
-  <%= @todo_item.completed %>
-</p>
+		<div class="row">
+			<div class="well well-sm">
+				<strong>Completed:</strong>
+		  		<%= @todo_item.completed %>
+		  	</div>
+		</div>
 
-<%= link_to 'Edit', edit_todo_list_todo_item_path(@todo_list, @todo_item) %> |
-<%= link_to 'Back', @todo_list %>
+		<div class="row">
+			<%= link_to 'Edit', edit_todo_list_todo_item_path(@todo_list, @todo_item), class: "btn btn-default" %>
+			<%= link_to 'Back', @todo_list , class: "btn btn-danger"%>
+		</div>
+	</div>
+</div>
